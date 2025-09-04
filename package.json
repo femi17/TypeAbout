@@ -1,0 +1,40 @@
+{
+  "name": "type-about-game",
+  "version": "1.0.0",
+  "description": "A word association typing game where players type related words to a given target word within 20 seconds",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:devvit",
+    "dev:devvit": "npx @devvit/cli playtest r/TypeAboutGame",
+    "build": "npx @devvit/cli build",
+    "launch": "npx @devvit/cli launch",
+    "start:server": "node src/server/index.js",
+    "start:client": "vite",
+    "build:client": "vite build"
+  },
+  "keywords": ["game", "word-game", "typing", "reddit", "devvit"],
+  "author": "Type About Game Team",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@devvit/public-api": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@devvit/cli": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=22.2.0"
+  }
+}
+
